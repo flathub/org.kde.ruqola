@@ -19,7 +19,18 @@
         {
             "name": "libsecret",
             "buildsystem": "meson",
-            "sources": [ { "type": "archive", "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.5/libsecret-0.20.5.tar.gz", "sha256": "b33b9542222ea8866f6ff2d31c0ad373877c2277db546ca00cc7fdda9cbab1c3" } ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.5/libsecret-0.20.5.tar.gz",
+                    "sha256": "b33b9542222ea8866f6ff2d31c0ad373877c2277db546ca00cc7fdda9cbab1c3",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libsecret",
+                        "stable-only": true
+                    }
+                }
+            ],
             "config-opts": [ "-Dgcrypt=false", "-Dgtk_doc=false", "-Dintrospection=false", "-Dmanpage=false", "-Dvapi=false" ]
         },
         {
