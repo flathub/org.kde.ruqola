@@ -35,11 +35,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/ruqola/ruqola-1.7.1.tar.xz",
-                    "sha256": "09dee260bab4a1097e77164f7311dda122d18a02e5db5af9dcbd539e7a3309a5"
-                },
-                {   "type": "patch",
-                    "path": "0001-Fix-XML.patch"
+                    "url": "https://download.kde.org/stable/ruqola/ruqola-1.7.2.tar.xz",
+                    "sha256": "09a3f668764926a94e79c4a56c794f4aeb945f6bdc5691d942b0b0fd7da2f948"
                 }
             ],
             "config-opts": [ "-DBUILD_TESTING=OFF" ],
