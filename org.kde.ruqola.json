@@ -69,7 +69,13 @@
                 {
                     "type": "archive",
                     "url": "https://download.kde.org/stable/ruqola/ruqola-1.7.3.tar.xz",
-                    "sha256": "f5415aee9de45e216c33114578ad9d376dfa3b5daea3790317eecd5c2031eab5"
+                    "sha256": "f5415aee9de45e216c33114578ad9d376dfa3b5daea3790317eecd5c2031eab5",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 272939,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/ruqola/ruqola-$version.tar.xz"
+                    }
                 }
             ],
             "config-opts": [
