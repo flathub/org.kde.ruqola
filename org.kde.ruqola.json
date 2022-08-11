@@ -76,6 +76,9 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/ruqola/ruqola-$version.tar.xz"
                     }
+                },
+                {   "type": "patch",
+                    "path": "0001-Add-missing-releases-to-appstream.patch"
                 }
             ],
             "config-opts": [
