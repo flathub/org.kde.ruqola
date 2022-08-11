@@ -1,0 +1,25 @@
+From 29c86a60d2ab014bfb122154a82a6b0fd54ff6bb Mon Sep 17 00:00:00 2001
+From: Nicolas Fella <nicolas.fella@gmx.de>
+Date: Thu, 11 Aug 2022 13:05:41 +0200
+Subject: [PATCH] Add missing releases to appstream
+
+---
+ src/data/org.kde.ruqola.appdata.xml | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/src/data/org.kde.ruqola.appdata.xml b/src/data/org.kde.ruqola.appdata.xml
+index cbab9cfce..31d3a1fb5 100644
+--- a/src/data/org.kde.ruqola.appdata.xml
++++ b/src/data/org.kde.ruqola.appdata.xml
+@@ -110,6 +110,8 @@
+     <binary>ruqola</binary>
+   </provides>
+   <releases>
++    <release version="1.7.4" date="2022-08-08"/>
++    <release version="1.7.3" date="2022-07-31"/>
+     <release version="1.7.2" date="2022-06-20">
+       <artifacts>
+         <artifact type="binary" platform="x86_64-windows-msvc">
+-- 
+2.37.1
+
