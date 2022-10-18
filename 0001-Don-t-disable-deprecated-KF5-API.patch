@@ -1,0 +1,25 @@
+From 4339a37b1f8d9602d0697bc95b490fedd459ca3b Mon Sep 17 00:00:00 2001
+From: Nicolas Fella <nicolas.fella@gmx.de>
+Date: Thu, 27 Apr 2023 15:41:52 +0200
+Subject: [PATCH] Don't disable deprecated KF5 API
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 5b4b8ccce..6f5ef90f3 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -156,7 +156,7 @@ set_package_properties(KF5NetworkManagerQt PROPERTIES DESCRIPTION "Network manag
+ 
+ include_directories(${CMAKE_CURRENT_BINARY_DIR})
+ ecm_set_disabled_deprecation_versions(QT 5.15.2
+-    KF 6.0.0
++    # KF 6.0.0
+     )
+ if (OPTION_BUILD_PYTHON_BINDINGS)
+    remove_definitions(-DQT_STRICT_ITERATORS)
+-- 
+2.40.0
+
