@@ -69,17 +69,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/ruqola/ruqola-1.7.4.tar.xz",
-                    "sha256": "f55f146651fb5f0f34a6b204f4d71b2baac9f6f93f0b8cb7423012b1ae55a93d",
+                    "url": "https://download.kde.org/stable/ruqola/ruqola-1.9.1.tar.xz",
+                    "sha256": "a01b5272ec6ca2b1711098e1dc8d60df77972de5dfe57613dab6d4d412e1b931",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 272939,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/ruqola/ruqola-$version.tar.xz"
                     }
-                },
-                {   "type": "patch",
-                    "path": "0001-Add-missing-releases-to-appstream.patch"
                 }
             ],
             "config-opts": [
