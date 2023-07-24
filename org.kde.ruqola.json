@@ -69,18 +69,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/ruqola/ruqola-1.9.1.tar.xz",
-                    "sha256": "a01b5272ec6ca2b1711098e1dc8d60df77972de5dfe57613dab6d4d412e1b931",
+                    "url": "https://download.kde.org/stable/ruqola/ruqola-1.9.2.tar.xz",
+                    "sha256": "08e4cbd4850cc9a290ec4a21ecf8b4fe609c974b245cdb47b1c63f7bb46c8fbd",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 272939,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/ruqola/ruqola-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-Don-t-disable-deprecated-KF5-API.patch"
                 }
             ],
             "config-opts": [
