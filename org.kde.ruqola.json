@@ -33,7 +33,7 @@
                 }
             ],
             "config-opts": [
-                "-Dgcrypt=false",
+                "-Dcrypto=disabled",
                 "-Dgtk_doc=false",
                 "-Dintrospection=false",
                 "-Dmanpage=false",
