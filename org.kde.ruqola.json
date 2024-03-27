@@ -1,17 +1,17 @@
 {
     "id": "org.kde.ruqola",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "6.6",
     "sdk": "org.kde.Sdk",
     "command": "ruqola",
     "rename-icon": "ruqola",
     "finish-args": [
         "--device=dri",
         "--share=ipc",
-        "--socket=fallback-x11",
-        "--socket=wayland",
-        "--socket=pulseaudio",
         "--share=network",
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--socket=wayland",
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=org.kde.kwalletd5"
     ],
@@ -43,11 +43,17 @@
         {
             "name": "qtkeychain",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_INSTALL_LIBDIR=/app/lib",
+                "-DLIB_INSTALL_DIR=/app/lib",
+                "-DBUILD_TRANSLATIONS=NO",
+                "-DBUILD_WITH_QT6=ON"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.1.tar.gz",
-                    "sha256": "afb2d120722141aca85f8144c4ef017bd74977ed45b80e5d9e9614015dadd60c",
+                    "url": "https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.2.tar.gz",
+                    "sha256": "cf2e972b783ba66334a79a30f6b3a1ea794a1dc574d6c3bebae5ffd2f0399571",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4138,
@@ -55,22 +61,42 @@
                         "url-template": "https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/$version.tar.gz"
                     }
                 }
-            ],
+            ]
+        },
+        {
+            "name": "ktextaddons",
+            "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DCMAKE_INSTALL_LIBDIR=/app/lib",
-                "-DLIB_INSTALL_DIR=/app/lib",
-                "-DBUILD_TRANSLATIONS=NO"
+                "-DBUILD_TESTING=OFF",
+                "-DQT_MAJOR_VERSION=6"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/ktextaddons/ktextaddons-1.5.3.tar.xz",
+                    "sha256": "8a52db8abfa8a9d68d2d291fb0f8be20659fd7899987b4dcafdf2468db0917dc",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 351168,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/ktextaddons/ktextaddons-$version.tar.xz"
+                    }
+                }
             ]
         },
         {
             "name": "ruqola",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DQT_MAJOR_VERSION=6"
+            ],
             "builddir": true,
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/ruqola/ruqola-2.0.0.tar.xz",
-                    "sha256": "a9649936adc3589c1e3a19a921c4b2a54bb6c4f9ffa1af50c7c02cae9f441737",
+                    "url": "https://download.kde.org/stable/ruqola/ruqola-2.1.1.tar.xz",
+                    "sha256": "6f089271ef9f2f576aa31ddc404bdbc8ddd5ddecba3cd9ff829641123bceb0ae",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 272939,
@@ -78,9 +104,6 @@
                         "url-template": "https://download.kde.org/stable/ruqola/ruqola-$version.tar.xz"
                     }
                 }
-            ],
-            "config-opts": [
-                "-DBUILD_TESTING=OFF"
             ],
             "cleanup": [
                 "/share/qlogging-categories5"
