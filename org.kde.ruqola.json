@@ -23,8 +23,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.4.tar.xz",
-                    "sha256": "163d08d783be6d4ab9a979ceb5a4fecbc1d9660d3c34168c581301cd53912b20",
+                    "url": "https://download.gnome.org/sources/libsecret/0.21/libsecret-0.21.5.tar.xz",
+                    "sha256": "08f45c44760ab4c2d6febd6e0eeb421663b29a72be52c48c61c507b0ef6a7920",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libsecret",
@@ -95,8 +95,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/ruqola/ruqola-2.3.1.tar.xz",
-                    "sha256": "99356ec689473cd5bfaca7f8db79ed5978efa8b3427577ba7b35c1b3714d5fcb",
+                    "url": "https://download.kde.org/stable/ruqola/ruqola-2.3.2.tar.xz",
+                    "sha256": "57c8ff6fdeb4aba286425a1bc915db98ff786544a3ada9dec39056ca4b587837",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 272939,
