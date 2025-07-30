@@ -73,8 +73,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/ktextaddons/ktextaddons-1.6.0.tar.xz",
-                    "sha256": "d9846505a52f97bda64ead193032bc29573ec31481f473be3c586f5b8321ecdc",
+                    "url": "https://download.kde.org/stable/ktextaddons/ktextaddons-1.7.0.tar.xz",
+                    "sha256": "ec9b629a90b4b216606867e8034f14b33443420c2b7b26f3fd414d8c1fa3cae4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 351168,
