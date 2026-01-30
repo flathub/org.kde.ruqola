@@ -5,6 +5,7 @@
     "sdk": "org.kde.Sdk",
     "command": "ruqola",
     "rename-icon": "ruqola",
+    "separate-locales": false,
     "finish-args": [
         "--device=dri",
         "--share=ipc",
@@ -15,7 +16,13 @@
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=org.kde.kwalletd5"
     ],
-    "separate-locales": false,
+    "cleanup": [
+        "/include",
+        "/lib/cmake",
+        "/mkspecs",
+        "/share/doc",
+        "/share/qlogging-categories6"
+    ],
     "modules": [
         {
             "name": "qtkeychain",
@@ -81,9 +88,6 @@
                         "url-template": "https://download.kde.org/stable/ruqola/ruqola-$version.tar.xz"
                     }
                 }
-            ],
-            "cleanup": [
-                "/share/qlogging-categories5"
             ]
         }
     ]
