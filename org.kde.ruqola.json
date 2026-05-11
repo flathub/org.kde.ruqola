@@ -57,8 +57,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/ktextaddons/ktextaddons-2.0.1.tar.xz",
-                    "sha256": "b52356be07215f0ace0b8e2a6df8bcd8f3572ef5c0aff89631b043b10adb0c8a",
+                    "url": "https://download.kde.org/stable/ktextaddons/ktextaddons-2.0.2.tar.xz",
+                    "sha256": "0d7f82a976ef682f45822b221e2f15cefc0039488bc8c700a6b0e7594aaebdea",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 351168,
@@ -79,8 +79,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/ruqola/ruqola-2.7.1.tar.xz",
-                    "sha256": "6cfdb2c62e32d9126cc7d302681ac87b0c79446978384e2ba8904955e4fd6ddf",
+                    "url": "https://download.kde.org/stable/ruqola/ruqola-2.7.2.tar.xz",
+                    "sha256": "c1ed71f2b25db51e376985a2e1d84c9fd1eab2cf35e1e710647ae733023ca867",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 272939,
