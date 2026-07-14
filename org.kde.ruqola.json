@@ -79,8 +79,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/ruqola/ruqola-2.8.0.tar.xz",
-                    "sha256": "ffb2a0857daaf56b7aa3a798f2a662a3d862fabccb234fcc579e601c3f003f21",
+                    "url": "https://download.kde.org/stable/ruqola/ruqola-2.8.1.tar.xz",
+                    "sha256": "7eb7589143ca770f2280a273a3946d733b5b2359ecf78ceb474f56809956e2db",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 272939,
