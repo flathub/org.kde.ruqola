@@ -1,0 +1,25 @@
+From ab43b80d9bb6455e372e303b9ad14e405cdca48f Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Wed, 28 Oct 2026 21:48:01 +0300
+Subject: [PATCH] Fix the release date
+
+---
+ src/data/org.kde.ruqola.appdata.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/data/org.kde.ruqola.appdata.xml b/src/data/org.kde.ruqola.appdata.xml
+index 456356b..bd23de7 100644
+--- a/src/data/org.kde.ruqola.appdata.xml
++++ b/src/data/org.kde.ruqola.appdata.xml
+@@ -1388,7 +1388,7 @@
+   </provides>
+   <launchable type="desktop-id">org.kde.ruqola.desktop</launchable>
+   <releases>
+-    <release version="2.9.0" type="snapshot">
++    <release version="2.9.0" date="2026-10-14">
+       <description>
+         <ul>
+           <li>Update Emoji list</li>
+--
+libgit2 1.9.7
+
