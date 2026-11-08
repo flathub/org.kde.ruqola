@@ -87,10 +87,6 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/ruqola/ruqola-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "fix-appdata.patch"
                 }
             ]
         }
